@@ -1,5 +1,7 @@
 import app from "./app.js";
+import { PORT } from "./config.js";
+import "./db.js";
 
-app.listen(3000, () => {
-  console.log("Server is listening on Port", 3000);
+app.listen(PORT, () => {
+  console.log("Server is listening on Port", PORT);
 });
